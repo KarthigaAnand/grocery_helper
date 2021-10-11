@@ -1,1 +1,28 @@
-<h1>Welcome To Grocery helper</h1>
+<div class="container">
+<div class="row align-items-center" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
+  
+  <div class="col">
+    <h2>NEVER GOES OUT OF STOCK!</h2><br><br>
+    <% if user_signed_in?  && current_user.role != "admin" %>
+      <div>
+        <%= link_to 'Create Your List',  products_path, :class => "register-button btn-lg" %> 
+      </div>
+    <% elsif user_signed_in? && current_user.role == "admin" %>
+      <div>
+        <%= link_to 'Add In Backend',  products_path, :class => "register-button btn-lg" %> 
+      </div>
+    <% else %>
+      <div>
+        <%= link_to 'Register Now',  new_user_registration_path, :class => "register-button btn-lg" %> 
+      </div>
+    <% end %>
+  </div>
+
+  <div class="col-md" id="image">
+    <%= image_tag "homepage_image.jpg", :class => "home_image" %>
+  </div>
+ 
+</div>
+</div>
+
+

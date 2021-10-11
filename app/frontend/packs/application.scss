@@ -1,0 +1,46 @@
+// Import Bootstrap v5  
+@import "~bootstrap/scss/bootstrap";
+ @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Staatliches&display=swap');
+
+.style_image {
+  height: 100px;
+  width: 100px;
+}
+
+.home_image {
+  width: 650px;
+  height: 450px;	
+}
+
+.register-button {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  background-color: #00ace6;
+  padding: 15px;
+  }
+
+.register-button:hover {
+  background-color: #ff9933;
+  color: #000000;
+}
+
+.navbar-link {
+   font-size: 20px;
+   color:  #000000;
+   text-decoration: none;
+   padding: 10px;
+}
+
+.navbar-link:hover {
+  background-color:  #ff9933;
+  color: #000000;
+}
+
+.btn {  
+  font-size: 20px;
+  border:none;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
