@@ -5,7 +5,7 @@
     <h2>NEVER GOES OUT OF STOCK!</h2><br><br>
     <% if user_signed_in?  && current_user.role != "admin" %>
       <div>
-        <%= link_to 'Create Your List',  products_path, :class => "register-button btn-lg" %> 
+          <%= link_to 'Create Your List',  lists_path, :class => "register-button btn-lg" %> 
       </div>
     <% elsif user_signed_in? && current_user.role == "admin" %>
       <div>
